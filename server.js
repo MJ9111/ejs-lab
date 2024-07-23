@@ -72,7 +72,15 @@ app.get('/menu/:category', (req, res) => {
   res.render('category', { category: category.charAt(0).toUpperCase() + category.slice(1), menuItems: menuItems });
 });
 
+// if (item.rating === 5) {
+//   return '${item.name} ⭐'
+// } else {
+//   return item.name;
+// }
+
 
 app.listen(3000, () => {
   console.log(`listening on port 3000`);
 });
+
+
